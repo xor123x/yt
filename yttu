@@ -13,25 +13,25 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
  })
 
 
-_G.MainColor = Color3.fromRGB(141, 0, 251) -- 0,0,0 are just RGB colors and u can usually get them from a hex wheel or wutever im pretty sure u already know that
+_G.MainColor = Color3.fromRGB(214, 7, 7) -- 0,0,0 are just RGB colors and u can usually get them from a hex wheel or wutever im pretty sure u already know that
 _G.SecondaryColor = Color3.fromRGB(5,5,5)
 _G.TertiaryColor = Color3.fromRGB(15, 15, 15)
-_G.SliderColor = Color3.fromRGB(141, 0, 251)
-_G.ButtonColor = Color3.fromRGB(141, 0, 251)
-_G.ToggleColor = Color3.fromRGB(141, 0, 251)
+_G.SliderColor = Color3.fromRGB(214, 7, 7)
+_G.ButtonColor = Color3.fromRGB(214, 7, 7)
+_G.ToggleColor = Color3.fromRGB(214, 7, 7)
 _G.ArrowColor = Color3.fromRGB(255,255,255)
 _G.MainTextColor = Color3.fromRGB(159, 68, 255)
-_G.PointerColor = Color3.fromRGB(141, 0, 251)
+_G.PointerColor = Color3.fromRGB(214, 7, 7)
 _G.DraggerCircleColor = Color3.fromRGB(255,255,255)
-_G.BindColor = Color3.fromRGB(141, 0, 251)
+_G.BindColor = Color3.fromRGB(214, 7, 7)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Creating Windows/Folders
 
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/xor123x/yt/main/guilaibary')))()
  
-local w = library:CreateWindow("A") -- Creates the window
+local w = library:CreateWindow("your project name") -- Creates the window
  
-local b = w:CreateFolder("B") -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder("game name") -- Creates the folder(U will put here your buttons,etc)
  
 b:Label("Pretty Useless NGL",{
     TextSize = 25; -- Self Explaining
@@ -72,6 +72,27 @@ end)
 b:Box("Box","number",function(value) -- "number" or "string"
     print(value)
 end)
+
+local s = library:CreateWindow("Misc") -- Creates the window
+
+local g = s:CreateFolder("Credits") -- Creates the folder(U will put here your buttons,etc)
+
+local m = s:CreateFolder("Misc") -- Creates the folder(U will put here your buttons,etc)
+
+m:Button("Destroy Gui",function()
+     for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+        if v:FindFirstChild("HiI'mSexyDon'tTouchMePls") then
+            v:Destroy()
+        end
+    end
+end)
+
+g:Label("Credits to korke",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
  
 --[[
 How to refresh a dropdown:
